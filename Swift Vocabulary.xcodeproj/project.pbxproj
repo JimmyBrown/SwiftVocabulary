@@ -14,6 +14,7 @@
 		3E7D3AF0243E885300BD6C78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E7D3AEE243E885300BD6C78 /* LaunchScreen.storyboard */; };
 		3E7D3AF8243E932800BD6C78 /* WordsTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D3AF7243E932800BD6C78 /* WordsTableTableViewController.swift */; };
 		3E7D3AFA243E935000BD6C78 /* DefinitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D3AF9243E935000BD6C78 /* DefinitionViewController.swift */; };
+		3E7D3AFC243EA3A000BD6C78 /* VocabularyWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D3AFB243EA3A000BD6C78 /* VocabularyWord.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3E7D3AF1243E885300BD6C78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E7D3AF7243E932800BD6C78 /* WordsTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsTableTableViewController.swift; sourceTree = "<group>"; };
 		3E7D3AF9243E935000BD6C78 /* DefinitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinitionViewController.swift; sourceTree = "<group>"; };
+		3E7D3AFB243EA3A000BD6C78 /* VocabularyWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocabularyWord.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,49 @@
 		3E7D3AE2243E885300BD6C78 /* Swift Vocabulary */ = {
 			isa = PBXGroup;
 			children = (
-				3E7D3AE3243E885300BD6C78 /* AppDelegate.swift */,
-				3E7D3AE5243E885300BD6C78 /* SceneDelegate.swift */,
-				3E7D3AE9243E885300BD6C78 /* Main.storyboard */,
-				3E7D3AEC243E885300BD6C78 /* Assets.xcassets */,
-				3E7D3AEE243E885300BD6C78 /* LaunchScreen.storyboard */,
+				3E7D3AFD243EABD700BD6C78 /* Model */,
+				3E7D3AFE243EABEC00BD6C78 /* Views */,
+				3E7D3AFF243EABF900BD6C78 /* Controllers */,
+				3E7D3B00243EB1E100BD6C78 /* Resources */,
 				3E7D3AF1243E885300BD6C78 /* Info.plist */,
+			);
+			path = "Swift Vocabulary";
+			sourceTree = "<group>";
+		};
+		3E7D3AFD243EABD700BD6C78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E7D3AFB243EA3A000BD6C78 /* VocabularyWord.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E7D3AFE243EABEC00BD6C78 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3E7D3AE9243E885300BD6C78 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3E7D3AFF243EABF900BD6C78 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
 				3E7D3AF7243E932800BD6C78 /* WordsTableTableViewController.swift */,
 				3E7D3AF9243E935000BD6C78 /* DefinitionViewController.swift */,
 			);
-			path = "Swift Vocabulary";
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3E7D3B00243EB1E100BD6C78 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3E7D3AE3243E885300BD6C78 /* AppDelegate.swift */,
+				3E7D3AE5243E885300BD6C78 /* SceneDelegate.swift */,
+				3E7D3AEC243E885300BD6C78 /* Assets.xcassets */,
+				3E7D3AEE243E885300BD6C78 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +178,7 @@
 			files = (
 				3E7D3AF8243E932800BD6C78 /* WordsTableTableViewController.swift in Sources */,
 				3E7D3AE4243E885300BD6C78 /* AppDelegate.swift in Sources */,
+				3E7D3AFC243EA3A000BD6C78 /* VocabularyWord.swift in Sources */,
 				3E7D3AE6243E885300BD6C78 /* SceneDelegate.swift in Sources */,
 				3E7D3AFA243E935000BD6C78 /* DefinitionViewController.swift in Sources */,
 			);

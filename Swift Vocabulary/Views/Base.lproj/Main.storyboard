@@ -10,7 +10,7 @@
         <!--Words Table View Controller-->
         <scene sceneID="n1O-b1-S5a">
             <objects>
-                <tableViewController id="Yuz-AB-u7v" customClass="WordsTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Yuz-AB-u7v" customClass="WordsTableViewController" customModule="Swift_Vocabulary" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gyR-dX-wgz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -46,7 +46,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M7t-ty-ehM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768" y="179"/>
+            <point key="canvasLocation" x="768" y="173"/>
         </scene>
         <!--Definition View Controller-->
         <scene sceneID="0Ad-ov-lfs">
@@ -55,14 +55,43 @@
                     <view key="view" contentMode="scaleToFill" id="sgd-9g-i4e">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i8V-jb-h7x">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSv-4t-Fqs">
+                                <rect key="frame" x="186" y="145" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DSv-4t-Fqs" firstAttribute="top" secondItem="JAb-cs-GtI" secondAttribute="top" constant="57" id="8eG-FI-2My"/>
+                            <constraint firstItem="DSv-4t-Fqs" firstAttribute="centerX" secondItem="sgd-9g-i4e" secondAttribute="centerX" id="P08-UH-C4f"/>
+                            <constraint firstItem="DSv-4t-Fqs" firstAttribute="centerX" secondItem="i8V-jb-h7x" secondAttribute="centerX" id="aM9-zt-X0W"/>
+                            <constraint firstItem="JAb-cs-GtI" firstAttribute="bottom" secondItem="i8V-jb-h7x" secondAttribute="bottom" constant="350" id="mtv-X7-shu"/>
+                            <constraint firstItem="i8V-jb-h7x" firstAttribute="leading" secondItem="JAb-cs-GtI" secondAttribute="leading" constant="87" id="uyU-oN-bW9"/>
+                            <constraint firstItem="i8V-jb-h7x" firstAttribute="centerY" secondItem="sgd-9g-i4e" secondAttribute="centerY" id="vD9-Rh-SgO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JAb-cs-GtI"/>
                     </view>
                     <navigationItem key="navigationItem" id="OaK-kp-K7f"/>
+                    <connections>
+                        <outlet property="view" destination="i8V-jb-h7x" id="JuV-sB-gzr"/>
+                        <outlet property="vocabDefinitionText" destination="i8V-jb-h7x" id="ruM-7s-dfS"/>
+                        <outlet property="vocabLabel" destination="DSv-4t-Fqs" id="Acn-Mo-ACb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2a-6W-S28" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1497" y="173"/>
+            <point key="canvasLocation" x="1501" y="173"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2mm-76-npf">
