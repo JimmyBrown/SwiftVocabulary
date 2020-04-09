@@ -13,8 +13,6 @@ class DefinitionViewController: UIViewController {
   @IBOutlet var vocabLabel: UILabel!
   @IBOutlet var vocabDefinitionText: UITextView!
   
-  
-
   var vocabWord: VocabularyWord?
   
   override func viewDidLoad() {
@@ -29,5 +27,4 @@ class DefinitionViewController: UIViewController {
       vocabDefinitionText.text = vocabWord?.definition
     }
   }
-
 }
